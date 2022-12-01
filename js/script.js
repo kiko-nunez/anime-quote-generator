@@ -1,6 +1,6 @@
 // Contants and Variables
-const api_title = "https://animechan.vercel.app/api/random/anime?title=naruto";
-const api_character= "https://animechan.vercel.app/api/random/character?name=saitama"
+const api_title = "https://animechan.vercel.app/api/random/anime?title=";
+const api_character= "https://animechan.vercel.app/api/random/character?name="
 
 // Cache DOM element reference
 const $anime = $("#anime");
@@ -26,11 +26,46 @@ function getQuote() {
     }
   );
 }
-getQuote();
+// getQuote();
 
-function dropDown() {
-    document.getElementById()
-}
+function selectAnime(answer) {
+    console.log(answer.value);
+    if(answer.value === 'bebop') {
+        document.getElementById('bebop').classList.remove('hidden')
+    } else if (answer.value !== 'bebop') {
+        document.getElementById('bebop').classList.add('hidden') 
+    } if (answer.value === 'naruto') {
+        document.getElementById('naruto').classList.remove('hidden')
+    } else if (answer.value !== 'naruto') {
+        document.getElementById('naruto').classList.add('hidden')
+    } if (answer.value === 'bleach') { 
+        document.getElementById('bleach').classList.remove('hidden')
+    } else if (answer.value !== 'bleach') {
+        document.getElementById('bleach').classList.add('hidden')
+    } if (answer.value === 'onepiece') {
+        document.getElementById('onepiece').classList.remove('hidden')
+    } else if (answer.value !== 'onepiece') {
+        document.getElementById('onepiece').classList.add('hidden')
+    } if (answer.value === 'fullmetal') {
+        document.getElementById('fullmetal').classList.remove('hidden')
+    } else if (answer.value !== 'fullmetal') {
+        document.getElementById('fullmetal').classList.add('hidden')
+    }
+    }
+// $(document).change(function() {
+//     // alert(this.value)
+//     alert($(this).find('#anime > option:selected').text())
+// }
+// )
+// $(document).change(function() {
+//     $('#anime').on('change', function() {
+//         let $selectedOption = $('#anime > option:selected')
+//         $selectedOption.show()
+//         // $selectedOption.show($.hidden)
+
+//         // $('').removeClass(hidden)
+//     })
+// })
 
 // function render(animeQuote) {
 //   const animeName = animeQuote.map(function(nameProperty) {
