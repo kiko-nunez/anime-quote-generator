@@ -14,10 +14,9 @@
     <h1>Choose an Anime Quote</h1>
     </header>
    </header>
-
     <main>
         <label for="anime">Anime:</label>
-        <select id="anime" onchange="selectAnime(this)">
+        <select id="anime">
             <option selected disabled>Select an anime</option>
             <option value="bebop">Cowboy Bebop</option>
             <option value="naruto">Naruto</option>
@@ -28,31 +27,31 @@
         <br><br>
 
         <label for="character">Character:</label>
-        <select id="bebop" class="hidden">
+        <select id="bebop" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
             <option>Spike Spiegel</option>
             <option>Faye Valentine</option>
             <option>Jet Black</option>
         </select>
-        <select id="naruto" class="hidden">
+        <select id="naruto" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
             <option>Naruto Uzumaki</option>
             <option>Sasuke Uchiha</option>
             <option>Rock Lee</option>
         </select>
-        <select id="onepiece" class="hidden">
+        <select id="onepiece" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
             <option>Luffy</option>
             <option>Zoro</option>
             <option>Jinbei</option>
         </select>
-        <select id="bleach" class="hidden">
+        <select id="bleach" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
             <option>Ichigo</option>
             <option>Aizen</option>
             <option>Rukia</option>
         </select>
-        <select id="fullmetal" class="hidden">
+        <select id="fullmetal" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
             <option>Edward Elric</option>
             <option>Winry Rockbell</option>
@@ -61,6 +60,10 @@
 
         <br><br>
         <button id="submit">Submit</button>
+
+        <br><br>
+
+        <p id="anime-text"></p>
         
     </main>
     <footer>
