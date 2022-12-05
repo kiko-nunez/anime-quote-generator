@@ -2,7 +2,7 @@
 
 ## Description
 
-Generates an anime quote based off the anime title selected.
+Generates an anime quote based off the anime character selected.
 
 ## Technologies Used
 - HTML5
