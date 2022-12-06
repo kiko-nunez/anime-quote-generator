@@ -14,6 +14,8 @@ body {
 h1 {
 font-family: 'Anime Ace', sans-serif;
 text-align: center;
+color: darkmagenta;
+text-shadow: whitesmoke;
 }
 
 .hidden {
@@ -24,14 +26,36 @@ main {
     text-align: center;
     list-style-position: outside;
     font-family: 'Anime Ace' sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-label {
-    justify-content: center;
-    align-items: flex-end;
+.selection-container {
+display: flex;
+justify-content: space-evenly;
 }
-#button {
-   
+#anime {
+    margin-left: 18px;
 }
+.anime-selection {
+    margin-left: 18px;
+}
+	
+select {
+    background-color: rgb(244, 121, 234);
+    border-style: solid;
+    border-color: black;
+    text-rendering: optimizeLegibility;
+    }
+    #anime-text {
+        color: white;
+        font-family: cursive;
+    }
+#load {
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .glow {
     width: 220px;
     height: 50px;
@@ -89,4 +113,8 @@ label {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+data.quote {
+    font-family: cursive;
 }

@@ -17,29 +17,34 @@
     </header>
    </header>
     <main>
+        <div class="selection-container">
         <label for="anime">Anime:</label>
-        <select id="anime">
-            <option selected disabled>Select an anime</option>
-            <option value="bebop">Cowboy Bebop</option>
-            <option value="naruto">Naruto</option>
-            <option value="onepiece">One Piece</option>
-            <option value="bleach">Bleach</option>
-            <option value="fullmetal">Fullmetal Alchemist</option>
-        </select>
+            <select id="anime">
+                <option selected disabled>Select Anime</option>
+                <option value="bebop">Cowboy Bebop</option>
+                <option value="naruto">Naruto</option>
+                <option value="onepiece">One Piece</option>
+                <option value="bleach">Bleach</option>
+                <option value="fullmetal">Fullmetal Alchemist</option>
+            </select>
+        </div>
         <br><br>
-
+        <div class="selection-container">
         <label for="character">Character:</label>
         <select id="bebop" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
             <option>Spike Spiegel</option>
             <option>Faye Valentine</option>
             <option>Jet Black</option>
+            <option>Vicious</option>
         </select>
         <select id="naruto" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
             <option>Naruto Uzumaki</option>
             <option>Sasuke Uchiha</option>
             <option>Rock Lee</option>
+            <option>Jiraiya</option>
+            <option>Madara</option>
 
         </select>
         <select id="onepiece" class="hidden anime-selection">
@@ -47,6 +52,8 @@
             <option>Luffy</option>
             <option>Sanji</option>
             <option>Zoro</option>
+            <option>Roger</option>
+            <option>Usopp</option>
 
         </select>
         <select id="bleach" class="hidden anime-selection">
@@ -54,22 +61,25 @@
             <option>Ichigo</option>
             <option>Aizen</option>
             <option>Orihime</option>
+            <option>Urahara</option>
+            <option>Shunsui</option>
         </select>
         <select id="fullmetal" class="hidden anime-selection">
             <option selected disabled>Select Character</option>
-            <option>Edward Elric</option>
-            <option>Winry Rockbell</option>
+            <option>Edward</option>
+            <option>Winry</option>
             <option>Mustang</option>
-            
-
+            <option>Greed</option>
+            <option>Alphonse</option>
         </select>
+    </div>
 
         <br><br>
-        <button class="glow" type="button">Generate Quote</button>
-
+        <button id="button" class="glow" type="button">Generate Quote</button>
         <br><br>
-
-        <p id="anime-text"></p>
+        <p id="load" class="hidden">Generating...</p>
+        <br>
+        <p id='anime-text'></p>
     </main>
     <footer>
     </footer>

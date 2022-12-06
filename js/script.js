@@ -1,11 +1,14 @@
 // Contants and Variables
-const api_title = "https://animechan.vercel.app/api/random/anime?title=";
 const api_character= "https://animechan.vercel.app/api/random/character?name="
 
 // Cache DOM element reference
 const $anime = $("#anime");
 const $button = $("#button");
-const $quote = $('#anime-text')
+const $textBox = $('#anime-text')
+const $choice = $('.anime-selection')
+let quote, characterName
+const $loadingIndicator = $('#load')
+
 
 // Register Event Listeners
 
@@ -20,7 +23,9 @@ function getQuote(characterName) {
     let requestUrl = api_character + characterName
   $.ajax(requestUrl).then(
     function (data) {
-    $($quote).text(data.quote);
+    quote = data.quote
+    $($textBox).text(quote)
+    $($loadingIndicator).addClass('hidden')
     },
     function (error) {
       console.log(error);
@@ -34,24 +39,17 @@ function getQuote(characterName) {
         $('.anime-selection').addClass('hidden')
         let idSelector = "#" + $selectedOption.val()
        $(idSelector).removeClass('hidden')
-    //    $(`#${$selectedOption.val()}`).addClass('hidden')
     })
 
     $('.anime-selection').on('change', function() {
-            let name = this.value
-            getQuote(name)
+        characterName = this.value
     })
 
-    $.ajax({api_character}).then((data) => {
-    console.log('success');
-},
-(error) => {
-    console.log('bad request', error);
-}
-)
+// button listener to send api request
 
-// $button.on('click', function() {
-//     let $selectedCharacter = '#' $choice.val()
-// })
+$($button).on('click', function() {
+    $($loadingIndicator).removeClass('hidden')
+    getQuote(characterName)
+})
 
-// Working Code Above
+
