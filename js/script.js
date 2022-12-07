@@ -8,11 +8,8 @@ const $textBox = $('#anime-text')
 const $choice = $('.anime-selection')
 let quote, characterName
 const $loadingIndicator = $('#load')
-
-
-// Register Event Listeners
-
-
+// const $spikePicture = $('#spike')
+const $characterLabel = $('.character-label')
 
 // Functions
 
@@ -26,19 +23,22 @@ function getQuote(characterName) {
     quote = data.quote
     $($textBox).text(quote)
     $($loadingIndicator).addClass('hidden')
+    // $($spikePicture).removeClass('hidden')
     },
     function (error) {
       console.log(error);
     }
   );
 }
+
 // jQuery functions to listen for selection and hide dropdowns
 
     $($anime).on('change', function() {
         let $selectedOption = $('#anime > option:selected')
         $('.anime-selection').addClass('hidden')
         let idSelector = "#" + $selectedOption.val()
-       $(idSelector).removeClass('hidden')
+        $(idSelector).removeClass('hidden')
+        $($characterLabel).removeClass('hidden')
     })
 
     $('.anime-selection').on('change', function() {

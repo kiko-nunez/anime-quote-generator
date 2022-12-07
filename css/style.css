@@ -20,6 +20,11 @@ text-shadow: whitesmoke;
 
 .hidden {
     display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 25%;
+    text-align: center;
 }
 
 main {
@@ -34,13 +39,16 @@ main {
 display: flex;
 justify-content: space-evenly;
 }
+
 #anime {
-    margin-left: 18px;
+    margin-left: 10%;
 }
 .anime-selection {
-    margin-left: 18px;
+    margin-left: 10%;
 }
-	
+
+.character-label {
+}
 select {
     background-color: rgb(244, 121, 234);
     border-style: solid;
@@ -117,4 +125,9 @@ select {
 
 data.quote {
     font-family: cursive;
+}
+
+.img {
+    text-align: center;
+    align-content: center;
 }
