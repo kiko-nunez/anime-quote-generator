@@ -19,4 +19,7 @@ Technologies Used:
 4. Quote will display with character picture
 5. Repeat or choose a different character
 
-## User Stories
+## Future Enhancements
+- Adds more anime and characters using current API
+- Integrates another API to find episode quote was said
+- More styling to page and interactive menus
