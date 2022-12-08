@@ -1,4 +1,4 @@
-project-1-anime
+## Anime Quote Generator
 
 This app generates an anime quote based off the anime character selected.
 
