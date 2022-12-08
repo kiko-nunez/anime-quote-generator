@@ -10,7 +10,7 @@ Technologies Used:
 - jQuery
 
 ## Screenshots
-!['Application photo"](app/screenshot)
+!(desktop/app/screenshot)
 
 ## Getting Started
 1. Select an anime from the dropdown menu
