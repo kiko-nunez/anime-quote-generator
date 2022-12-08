@@ -10,12 +10,13 @@ Technologies Used:
 - jQuery
 
 ## Screenshots
+!['Application photo"](app/screenshot)
 
 ## Getting Started
 1. Select an anime from the dropdown menu
 2. Select a character from the anime selected on the second dropdown menu
 3. Click the "Generate Quote" button 
-4. Quote will display 
+4. Quote will display with character picture
 5. Repeat or choose a different character
 
 ## User Stories
