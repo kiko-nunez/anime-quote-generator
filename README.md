@@ -13,6 +13,9 @@ Technologies Used:
 ![""](/screenshots/screenshot.png)
 
 ## Getting Started
+
+[Anime Quote Generator](https://kiko-nunez.github.io/anime-quote-generator/)
+
 1. Select an anime from the dropdown menu
 2. Select a character from the anime selected on the second dropdown menu
 3. Click the "Generate Quote" button 
